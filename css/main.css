@@ -1,0 +1,58 @@
+body {
+	height : 100vh;
+	display: flex;
+	margin: 0;
+	overflow: hidden;
+}
+#app {
+	width : 320px;
+	height: 90vh;
+	margin: auto;
+}
+#container{
+	flex-flow: column;
+}
+#header{
+	flex: 0 1 auto;
+}
+
+#content{
+	flex: 1 1 auto;
+	word-wrap: break-word;
+	overflow-y: auto;
+}
+
+#footer{
+	flex: 0 1 auto;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media only screen and (max-width: 330px) {
+	#app {
+		width : 100%;
+	}	
+}
