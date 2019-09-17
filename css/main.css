@@ -30,6 +30,10 @@ body {
 	cursor: pointer;
 }
 
+.done{
+	text-decoration: line-through;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
