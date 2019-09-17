@@ -52,9 +52,20 @@
 				</div>
 			</div>
 			<div id="footer" class="col-12 bg-light text-center p-2 pb-4">
-				<button class="btn btn-sm btn-outline-success">
+				<button class="btn btn-sm btn-outline-success"
+				v-show = "addButtonVisible"
+				@click = "addButtonVisible = !addButtonVisible">
 					Add New
 				</button>
+				<div v-show = "!addButtonVisible">
+					<input type="text" class="form-control"
+					v-model = "addTodoText">
+					<button class="btn btn-sm btn-success mt-2"
+					@click = "addTodo()">
+						Done
+					</button>	
+				</div>
+				
 			</div>
 		</div>
 	</div>
