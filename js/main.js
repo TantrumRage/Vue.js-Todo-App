@@ -14,6 +14,11 @@ var app = new Vue({
 			this.todos.push({'text': this.addTodoText, 'done': false});
 			this.addTodoText = '';
 			this.addButtonVisible = !this.addButtonVisible;
+		},
+		deleteTodo(todo) {
+			let itemIndex = this.todos.indexOf(todo);
+			
+			this.todos.splice(itemIndex, 1);
 		}
 	}
 });
